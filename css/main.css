@@ -1,0 +1,37 @@
+.video{
+    position: relative;
+}
+#mainvid{
+    filter:brightness(70%)
+}
+
+header .navigation .navigation-items a[href="index.html"] {
+    color: #FFD700;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-container label {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: orange;
+}
+
+.rating-container input[type="radio"] {
+  display: none;
+}
+
+.rating-container label:hover,
+.rating-container label:hover ~ label {
+  color: #000;
+  cursor: pointer;
+}
+
+.rating-container input[type="radio"]:checked ~ label {
+  color: black;
+}

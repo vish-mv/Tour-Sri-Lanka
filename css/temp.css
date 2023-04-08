@@ -1,0 +1,135 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo{
+    transition: 0.5s ease;
+}
+.logo:hover{
+    filter: drop-shadow(1px 0px 2px #01fe87);
+}
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+    padding: 10px 100px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+header:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header .navigation{
+    position: relative;
+}
+header .navigation .navigation-items a {
+    position: relative;
+    color:#fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: 0.3s ease;
+
+}
+header .navigation .navigation-items a:hover {
+    color: #01fe87;
+}
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #000;
+    width:0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+    background: #01fe87;
+}
+header.bgColor{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 50px 5%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+footer div{
+    text-align: center;
+    justify-content: space-between;
+    display: block;
+}
+.container-1{
+    flex-grow: 2;
+}
+.container-2{
+    flex-grow: 2;
+}
+.container-3{
+    flex-grow: 2;
+}
+footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px; ;
+    letter-spacing: 1px;
+}
+.container-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+    transition: 0.4s ease;
+}
+.container-3 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+    transition: 0.4s ease;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+form button{
+    background: transparent; 
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+footer div a:hover{
+    color:#01fe87
+}
+form button:hover{
+    border-color: #01fe87;
+    background-color: #01fe87;
+    color: #000;
+}
+

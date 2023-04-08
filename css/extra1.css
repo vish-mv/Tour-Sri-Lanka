@@ -1,0 +1,158 @@
+.loaction{
+    position: absolute;
+    right: 10px;
+    margin-top: 82px;
+    padding: 10px;
+    justify-content: space-between;
+    z-index: 20;
+}
+.loaction-button{
+    padding: 5px;
+    background-color: rgba(27, 27, 27, 0.6);
+    width: auto;
+    text-decoration: none;
+    color: #fff;
+    border:2px solid #fff;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 120px;
+}
+a{
+    text-decoration: none;
+}
+.loaction-button:hover{
+    background-color: #fff;
+    color: #000;
+}
+#bgima{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    opacity: 0.4;
+}
+#bgima img{
+    width: 100%;
+}
+
+.slideshow-container {
+    margin-top: 40px;
+    max-width: 100%;
+    position: relative;
+}
+.dots{
+    text-align:center;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #01fe87;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.card-img{
+    height: 500px;
+    width:1000px;
+    border-radius: 10px;
+}
+.card{
+    height:500px;
+    width:1000px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    transform: translateX(20%);
+    border-radius: 10px;
+}
+.intro{
+    transform: translateY(250px);
+    height: 300px;
+    width:1000px;
+    box-sizing: border-box;
+    position:sticky;
+    bottom: 0;
+    background:rgba(27, 27, 27, 0.8);
+    color: #fff;
+    z-index: 10;
+    transition:all 0.5s ease;
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+    text-align: justify;
+}
+.none{
+    font-size: 30px;
+    margin: 20px;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    transform: translateY(0);
+}
+#text{
+    background: rgba(27, 27, 27, 0.6);
+    font-family: 'Fredoka One', cursive;
+    position: absolute;
+    color: #fff;
+    z-index: 20;
+    font-size: 2.3em;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transform:translateX(30%);
+    margin-top: 3%;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1 vw #000;
+    letter-spacing: 0.2em;
+}
+.editorbutton:hover{
+    border-color: #01fe87;
+    background-color: #01fe87;
+    color: #000;
+}
+.editorbutton{
+    background: transparent; 
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    width: 100px;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
